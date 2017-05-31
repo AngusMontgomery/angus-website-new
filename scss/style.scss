@@ -1,0 +1,267 @@
+/* 
+Project Name: Angus Website
+Client: Me
+Author: Me
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+/* light gray background: #DEE0E2 
+ */
+
+/* typefaces: Space Mono for headers, Karla for body;
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+$background-color: #DEE0E2;
+$hover-color: #F08C8C;
+$headline-font: 'Space Mono', monospace;
+$body-font: 'Karla', sans-serif;
+
+* {
+     box-sizing: border-box;
+}
+.site-content{
+	margin-top: 2em;
+}
+img {
+	max-height: 15em;
+	max-width: 100%;
+	filter: grayscale(10%);
+}
+
+@media only screen and (max-width:800px) {
+	img {
+		max-height: none;
+	}
+}
+
+h1, h2, h3 {
+	font-family: $headline-font;
+}
+
+.intro {
+	margin: 10px;
+}
+
+.hidden-content h2 {
+		font-size: 3.5em;
+}
+
+	
+.article-container {
+ 	display: inline-block;
+ 	background-color:#f1f2f3;
+  	background-image:	linear-gradient(rgba(0,0,0,.015) 1px, transparent 1px), linear-gradient(0, rgba(0,0,0,.015) 1px, transparent 1px);
+  	background-size:5px 5px;
+  	background-position:-1px -1px, -1px -1px;
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	p {
+		padding-top: 2em;
+		font-size: 1.1em;
+	}
+
+	img {
+		padding-top: 1.5em;
+		display: block;
+		margin: auto;
+	}
+}
+
+.article-container:hover {
+	background-color: $hover-color;
+  	background-image:	linear-gradient(rgba(0,0,0,.015) 1px, transparent 1px), linear-gradient(0, rgba(0,0,0,.015) 1px, transparent 1px);
+  	background-size:5px 5px;
+  	background-position:-1px -1px, -1px -1px;
+}
+
+
+p {
+	font-family: $body-font;
+}
+
+body {
+	background-color: $background-color; 
+}
+
+.column-full {
+	width: 100%;
+}
+
+.column-one-third {
+	width: 33.33%;
+	float: left;
+	padding: 5px;
+}
+
+@media only screen and (max-width:800px) {
+
+.column-one-third{
+	float: none;
+	width: 80%;
+	display: block;
+	margin: auto;
+	}
+}
+
+
+.grid-row {
+	clear: left;
+
+	a {
+	color: black;
+	text-decoration: none;
+	}
+}
+
+
+
+.intro {
+	font-size: 3em;
+	a {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	}
+	a:hover{
+	color:black;
+	text-decoration: underline;
+	text-decoration-color: red;	
+	}
+	sup a {
+	color: red;	
+	}
+}
+
+.fa {
+	font-size: 2.5em;
+	padding: 0.2em;
+	color: black;
+}
+
+.navigation {
+  	font-family: $headline-font;
+  	font-size: 1.5em;
+  	position: fixed;
+  	right: 0;
+  	top: 10%;
+  	width: 8em;
+  	margin-top: -2.5em;
+  	a {
+  	color: black;
+  	}
+
+  	li a:visited {
+  	background: red;	
+  	}
+
+	li a:hover{
+  	background: $hover-color;
+}
+
+@media only screen and (max-width:1300px) {
+
+	margin-top: 1em;
+	position: initial;
+	float: left;
+	width: 100%;
+}
+
+}
+
+.active-link {
+	background: red;
+}
+
+.current {
+	img {
+		max-height: none;
+		max-width: 60%;
+		display: block;
+		margin: auto;
+	}
+}
+.article-text a {
+	font-family: $body-font;
+	font-size: 2.5em;
+	color: white;
+	text-decoration: none;
+	margin: auto;
+	display: inline-block;
+	padding: 2em;
+}
+
+.article-text a:hover {
+	color: $hover-color;
+	text-decoration: underline;
+}
+
+.article-body {
+	background-image: url("../images/rapha.jpg");
+}
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* add type styles here */
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.site-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.site-header {
+
+}
+.site-content {
+
+}
+.site-footer {
+clear: left;
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
