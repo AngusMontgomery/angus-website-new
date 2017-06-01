@@ -46,6 +46,7 @@ h1, h2, h3 {
 }
 
 .intro {
+	display: none;
 	margin: 10px;
 }
 
@@ -98,9 +99,10 @@ body {
 }
 
 .column-one-third {
-	width: 33.33%;
+	display: block;
+	width: 33.3%;
 	float: left;
-	padding: 5px;
+	padding: 10px;
 }
 
 @media only screen and (max-width:800px) {
@@ -133,9 +135,9 @@ body {
 	color: black;
 	}
 	a:hover{
-	color:black;
+	color:$hover-color;
 	text-decoration: underline;
-	text-decoration-color: red;	
+	text-decoration-color: $hover-color;	
 	}
 	sup a {
 	color: red;	
@@ -143,9 +145,13 @@ body {
 }
 
 .fa {
-	font-size: 2.5em;
+	font-size: 4.5em;
 	padding: 0.2em;
 	color: black;
+}
+
+.fa:hover {
+	color:$hover-color;
 }
 
 .navigation {
@@ -190,6 +196,11 @@ body {
 		margin: auto;
 	}
 }
+
+.article-text {
+	display: none;
+}
+
 .article-text a {
 	font-family: $body-font;
 	font-size: 2.5em;
@@ -205,8 +216,24 @@ body {
 	text-decoration: underline;
 }
 
-.article-body {
+.rapha-body {
 	background-image: url("../images/rapha.jpg");
+}
+
+.strava-body {
+	background-image: url("../images/strava.jpg");
+}
+
+.visualcomms-body {
+	background-image: url("../images/visualcomms.jpg");
+}
+
+.site-footer {
+	clear: all;
+	p {
+		font-family: $body-font;
+		font-size: 1.5em;
+	}
 }
 
 

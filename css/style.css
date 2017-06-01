@@ -34,6 +34,7 @@ h1, h2, h3 {
   font-family: "Space Mono", monospace; }
 
 .intro {
+  display: none;
   margin: 10px; }
 
 .hidden-content h2 {
@@ -71,9 +72,10 @@ body {
   width: 100%; }
 
 .column-one-third {
-  width: 33.33%;
+  display: block;
+  width: 33.3%;
   float: left;
-  padding: 5px; }
+  padding: 10px; }
 
 @media only screen and (max-width: 800px) {
   .column-one-third {
@@ -95,17 +97,20 @@ body {
     text-decoration: none;
     color: black; }
   .intro a:hover {
-    color: black;
+    color: #F08C8C;
     text-decoration: underline;
-    -webkit-text-decoration-color: red;
-    text-decoration-color: red; }
+    -webkit-text-decoration-color: #F08C8C;
+    text-decoration-color: #F08C8C; }
   .intro sup a {
     color: red; }
 
 .fa {
-  font-size: 2.5em;
+  font-size: 4.5em;
   padding: 0.2em;
   color: black; }
+
+.fa:hover {
+  color: #F08C8C; }
 
 .navigation {
   font-family: "Space Mono", monospace;
@@ -137,6 +142,9 @@ body {
   display: block;
   margin: auto; }
 
+.article-text {
+  display: none; }
+
 .article-text a {
   font-family: "Karla", sans-serif;
   font-size: 2.5em;
@@ -150,8 +158,20 @@ body {
   color: #F08C8C;
   text-decoration: underline; }
 
-.article-body {
+.rapha-body {
   background-image: url("../images/rapha.jpg"); }
+
+.strava-body {
+  background-image: url("../images/strava.jpg"); }
+
+.visualcomms-body {
+  background-image: url("../images/visualcomms.jpg"); }
+
+.site-footer {
+  clear: all; }
+  .site-footer p {
+    font-family: "Karla", sans-serif;
+    font-size: 1.5em; }
 
 /******************************************
 /* TYPOGRAPHY

@@ -2,7 +2,11 @@ console.log('it works');
 
 $(document).ready(function() {
 
-$('.article-container').equalHeights();
+$(".article-container").equalHeights();
+
+$("#article-text").slideDown(1200);
+
+$("#intro").slideDown(1200);
 
 $("#hidden-nav").hide();
 $("#current-section").hide();
@@ -12,23 +16,30 @@ $("#projects-section").hide();
 $("#talks-section").hide();
 $("#films-section").hide();
 
+  // $('a').on('click', function(event) {
+  //   event.preventDefault();
+  //   var $this = $(this);
+  //   var container = $this.attr('href');
+  //   $('article').hide()
+  //   $(container).slideDown()
+  // });
 
 $("#home-link").click(function(){
 	event.preventDefault();
 	$("#starting-content").slideDown();
 	$("#hidden-nav").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 })
 
 $("#current-link").click(function(){
 	event.preventDefault();
 	$("#hidden-nav").slideDown();
-	$("#starting-content").slideUp();
+	$("#starting-content").hide();
 	$("#current-section").slideDown();
 	$("#interview-section").hide();
 	$("#features-section").hide();
