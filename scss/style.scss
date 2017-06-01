@@ -35,12 +35,6 @@ img {
 	filter: grayscale(10%);
 }
 
-@media only screen and (max-width:800px) {
-	img {
-		max-height: none;
-	}
-}
-
 h1, h2, h3 {
 	font-family: $headline-font;
 }
@@ -99,7 +93,7 @@ body {
 }
 
 .column-one-third {
-	display: block;
+	display: inline-block;
 	width: 33.3%;
 	float: left;
 	padding: 10px;
@@ -110,8 +104,9 @@ body {
 .column-one-third{
 	float: none;
 	width: 80%;
-	display: block;
+	display: inline-block;
 	margin: auto;
+	overflow: hidden;
 	}
 }
 
@@ -128,7 +123,7 @@ body {
 
 
 .intro {
-	font-size: 3em;
+	font-size: 3.5vw;
 	a {
 	font-weight: bold;
 	text-decoration: none;
@@ -184,6 +179,30 @@ body {
 
 }
 
+.home-link {
+margin-top: 2em;
+margin-left: 2em;	
+
+	a {
+		display: block;
+	width: 3em;	
+ 	background-color:#f1f2f3;
+  	background-image:	linear-gradient(rgba(0,0,0,.015) 1px, transparent 1px), linear-gradient(0, rgba(0,0,0,.015) 1px, transparent 1px);
+  	background-size:5px 5px;
+  	background-position:-1px -1px, -1px -1px;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color:$hover-color;
+	text-decoration: underline;
+	text-decoration-color: $hover-color;	
+	}
+}
+
 .active-link {
 	background: red;
 }
@@ -203,10 +222,10 @@ body {
 
 .article-text a {
 	font-family: $body-font;
-	font-size: 2.5em;
+	font-size: 2.75vw;
 	color: white;
 	text-decoration: none;
-	margin: auto;
+	margin: 0 auto;
 	display: inline-block;
 	padding: 2em;
 }
@@ -228,6 +247,14 @@ body {
 	background-image: url("../images/visualcomms.jpg");
 }
 
+.osborne-body {
+	background-image: url("../images/osborne.jpg");
+}
+
+.scher-body {
+	background-image: url("../images/paulascher.jpg");
+}
+
 .site-footer {
 	clear: all;
 	p {
@@ -235,6 +262,8 @@ body {
 		font-size: 1.5em;
 	}
 }
+
+
 
 
 /******************************************
