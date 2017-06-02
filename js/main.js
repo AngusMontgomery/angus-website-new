@@ -6,7 +6,7 @@ $(".article-container").equalHeights();
 
 $("#article-text").slideDown(1200);
 
-$("#intro").slideDown(1200);
+$("#starting-content").slideDown(1200);
 
 $("#hidden-nav").hide();
 $("#current-section").hide();
@@ -26,8 +26,8 @@ $("#films-section").hide();
 
 $("#home-link").click(function(){
 	event.preventDefault();
-	$("#starting-content").slideDown();
-	$("#hidden-nav").slideUp();
+	$("#starting-content").slideDown(1200);
+	$("#hidden-nav").slideUp(1200);
 	$("#current-section").hide();
 	$("#interview-section").hide();
 	$("#features-section").hide();
@@ -38,9 +38,9 @@ $("#home-link").click(function(){
 
 $("#current-link").click(function(){
 	event.preventDefault();
-	$("#hidden-nav").slideDown();
+	$("#hidden-nav").slideDown(1200);
 	$("#starting-content").hide();
-	$("#current-section").slideDown();
+	$("#current-section").slideDown(1200);
 	$("#interview-section").hide();
 	$("#features-section").hide();
 	$("#projects-section").hide();
@@ -56,10 +56,10 @@ $("#current-link").click(function(){
 
 $("#interviews-link").click(function(){
 	event.preventDefault();
-	$("#hidden-nav").slideDown();
+	$("#hidden-nav").slideDown(1200);
 	$("#starting-content").slideUp();
 	$("#current-section").hide();
-	$("#interview-section").slideDown();
+	$("#interview-section").slideDown(1200);
 	$("#features-section").hide();
 	$("#projects-section").hide();
 	$("#talks-section").hide();
@@ -74,11 +74,11 @@ $("#interviews-link").click(function(){
 
 $("#features-link").click(function(){
 	event.preventDefault();
-	$("#hidden-nav").slideDown();
+	$("#hidden-nav").slideDown(1200);
 	$("#starting-content").slideUp();
 	$("#current-section").hide();
 	$("#interview-section").hide();
-	$("#features-section").slideDown();
+	$("#features-section").slideDown(1200);
 	$("#projects-section").hide();
 	$("#talks-section").hide();
 	$("#films-section").hide();
@@ -92,12 +92,12 @@ $("#features-link").click(function(){
 
 $("#projects-link").click(function(){
 	event.preventDefault();
-	$("#hidden-nav").slideDown();
-	$("#starting-content").slideUp();
+	$("#hidden-nav").slideDown(1200);
+	$("#starting-content").hide();
 	$("#current-section").hide();
 	$("#interview-section").hide();
 	$("#features-section").hide();
-	$("#projects-section").slideDown();
+	$("#projects-section").slideDown(1200);
 	$("#talks-section").hide();
 	$("#films-section").hide();
 	$("#interviews-link-1").removeClass("active-link");
@@ -110,13 +110,13 @@ $("#projects-link").click(function(){
 
 $("#talks-link").click(function(){
 	event.preventDefault();
-	$("#hidden-nav").slideDown();
-	$("#starting-content").slideUp();
+	$("#hidden-nav").slideDown(1200);
+	$("#starting-content").hide();
 	$("#current-section").hide();
 	$("#interview-section").hide();
 	$("#features-section").hide();
 	$("#projects-section").hide();
-	$("#talks-section").slideDown();
+	$("#talks-section").slideDown(1200);
 	$("#films-section").hide();
 	$("#interviews-link-1").removeClass("active-link");
 	$("#features-link-1").removeClass("active-link");
@@ -128,14 +128,14 @@ $("#talks-link").click(function(){
 
 $("#films-link").click(function(){
 	event.preventDefault();
-	$("#hidden-nav").slideDown();
-	$("#starting-content").slideUp();
+	$("#hidden-nav").slideDown(1200);
+	$("#starting-content").hide();
 	$("#current-section").hide();
 	$("#interview-section").hide();
 	$("#features-section").hide();
 	$("#projects-section").hide();
 	$("#talks-section").hide();
-	$("#films-section").slideDown();
+	$("#films-section").slideDown(1200);
 	$("#interviews-link-1").removeClass("active-link");
 	$("#features-link-1").removeClass("active-link");
 	$("#projects-link-1").removeClass("active-link");
@@ -147,24 +147,24 @@ $("#films-link").click(function(){
 $("#current-link-1").click(function(){
 	event.preventDefault();
 if ($("#current-link-1").hasClass("active-link")) {
-	$("#starting-content").slideDown();
-	$("#hidden-nav").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").slideDown(1200);
+	$("#hidden-nav").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#current-link-1").removeClass("active-link");
 }	else {
-	$("#hidden-nav").show();
-	$("#starting-content").slideUp();
-	$("#current-section").slideDown();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#hidden-nav").show();	
+	$("#starting-content").hide();
+	$("#current-section").slideDown(1200);
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#interviews-link-1").removeClass("active-link");
 	$("#features-link-1").removeClass("active-link");
 	$("#projects-link-1").removeClass("active-link");
@@ -177,24 +177,24 @@ if ($("#current-link-1").hasClass("active-link")) {
 $("#interviews-link-1").click(function(){
 	event.preventDefault();
 	if ($("#interviews-link-1").hasClass("active-link")) {
-	$("#starting-content").slideDown();
-	$("#hidden-nav").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").slideDown(1200);
+	$("#hidden-nav").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#interviews-link-1").removeClass("active-link");
 }	else {
 	$("#hidden-nav").show();
-	$("#starting-content").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideDown();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").hide();
+	$("#current-section").hide();
+	$("#interview-section").slideDown(1200);
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#current-link-1").removeClass("active-link");
 	$("#features-link-1").removeClass("active-link");
 	$("#projects-link-1").removeClass("active-link");
@@ -208,24 +208,24 @@ $("#interviews-link-1").click(function(){
 $("#features-link-1").click(function(){
 	event.preventDefault();
 	if ($("#features-link-1").hasClass("active-link")) {
-	$("#starting-content").slideDown();
-	$("#hidden-nav").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").slideDown(1200);
+	$("#hidden-nav").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#features-link-1").removeClass("active-link");
 }	else {
 	$("#hidden-nav").show();
-	$("#starting-content").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideDown();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").slideDown(1200);
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#hidden-nav").removeClass("active-link");
 	$("#interviews-link-1").removeClass("active-link");
 	$("#projects-link-1").removeClass("active-link");
@@ -240,24 +240,24 @@ $("#features-link-1").click(function(){
 $("#projects-link-1").click(function(){
 	event.preventDefault();
 	if ($("#projects-link-1").hasClass("active-link")) {
-	$("#starting-content").slideDown();
-	$("#hidden-nav").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").slideDown(1200);
+	$("#hidden-nav").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#projects-link-1").removeClass("active-link");
 }	else {
 	$("#hidden-nav").show();
-	$("#starting-content").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideDown();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").slideDown(1200);
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#hidden-nav").removeClass("active-link");
 	$("#interviews-link-1").removeClass("active-link");
 	$("#talks-link-1").removeClass("active-link");
@@ -271,24 +271,24 @@ $("#projects-link-1").click(function(){
 $("#talks-link-1").click(function(){
 	event.preventDefault();
 	if ($("#talks-link-1").hasClass("active-link")) {
-	$("#starting-content").slideDown();
-	$("#hidden-nav").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").slideDown(1200);
+	$("#hidden-nav").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#talks-link-1").removeClass("active-link");
 }	else {
 	$("#hidden-nav").show();
-	$("#starting-content").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideDown();
-	$("#films-section").slideUp();
+	$("#starting-content").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").slideDown(1200);
+	$("#films-section").hide();
 	$("#interviews-link-1").removeClass("active-link");
 	$("#projects-link-1").removeClass("active-link");
 	$("#films-link-1").removeClass("active-link");
@@ -301,24 +301,24 @@ $("#talks-link-1").click(function(){
 $("#films-link-1").click(function(){
 	event.preventDefault();
 	if ($("#films-link-1").hasClass("active-link")) {
-	$("#starting-content").slideDown();
-	$("#hidden-nav").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideUp();
+	$("#starting-content").slideDown(1200);
+	$("#hidden-nav").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").hide();
 	$("#films-link-1").removeClass("active-link");
 }	else {
 	$("#hidden-nav").show();
-	$("#starting-content").slideUp();
-	$("#current-section").slideUp();
-	$("#interview-section").slideUp();
-	$("#features-section").slideUp();
-	$("#projects-section").slideUp();
-	$("#talks-section").slideUp();
-	$("#films-section").slideDown();
+	$("#starting-content").hide();
+	$("#current-section").hide();
+	$("#interview-section").hide();
+	$("#features-section").hide();
+	$("#projects-section").hide();
+	$("#talks-section").hide();
+	$("#films-section").slideDown(1200);
 	$("#interviews-link-1").removeClass("active-link");
 	$("#projects-link-1").removeClass("active-link");
 	$("#talks-link-1").removeClass("active-link");
